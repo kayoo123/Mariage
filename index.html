@@ -75,26 +75,18 @@
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">Story</a></li>
+						<li class="active"><a href="index.html">Accueil</a></li>
+						<li><a href="about.html">Nous</a></li>
 						<li class="has-dropdown">
-							<a href="services.html">Services</a>
+							<a href="services.html">Organisation</a>
 							<ul class="dropdown">
-								<li><a href="#">Bisous</a></li>
-								<li><a href="#">Calins</a></li>
-								<li><a href="#">Cadeaux</a></li>
-								<li><a href="#">etc...</a></li>
+								<li><a href="#">Le lieu</a></li>
+								<li><a href="#">le planning</a></li>
+								<li><a href="#">...</a></li>
+								<li><a href="#">...</a></li>
 							</ul>
 						</li>
-						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
-							<ul class="dropdown">
-								<li><a href="#">Arrivee</a></li>
-								<li><a href="#">Cocktail</a></li>
-								<li><a href="#">Soirée</a></li>
-								<li><a href="#">Divers</a></li>
-							</ul>
-						</li>
+						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
@@ -615,19 +607,19 @@
     		    day: 08,
 		    enableUtc: true,
 		    words: {
-			days: 'jours',
-	                hours: 'heures',
-        	        minutes: 'minutes',
-                	seconds: 'secondes',
+			days: 'jour',
+	                hours: 'heure',
+        	        minutes: 'minute',
+                	seconds: 'seconde',
 		    }
     		});
 
     		//jQuery example
     		$('#simply-countdown-losange').simplyCountdown({
-    		    year: 2019,
-    		    month: 06,
-    		    day: 08,
-    		    enableUtc: true
+                    year: d.getFullYear(),
+                    month: d.getMonth() + 1,
+                    day: d.getDate(),
+                    enableUtc: false
     		});
 	</script>
 
