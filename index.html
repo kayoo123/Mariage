@@ -610,9 +610,16 @@
 
     		// default example
     		simplyCountdown('.simply-countdown-one', {
-    		    year: d.getFullYear(),
-    		    month: d.getMonth() + 1,
-    		    day: d.getDate()
+    		    year: 2019,
+    		    month: 06,
+    		    day: 08,
+		    enableUtc: true,
+		    words: {
+			days: 'jours',
+	                hours: 'heures',
+        	        minutes: 'minutes',
+                	seconds: 'secondes',
+		    }
     		});
 
     		//jQuery example
